@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:  ${kafka.brokers.host}
+          zk-nodes: ${zookeeper.host}
+          auto-create-topics: true
+management:
+  security:
+    enabled: false
