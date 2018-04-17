@@ -11,12 +11,10 @@ sharding:
     datasource:
       names: ds
       ds:
-        url: jdbc:mysql://123.207.23.185:3306/mama-buy-user
-        username: root
-        password: 12345678
-
+        url: ${mysql.url}
+        username: ${mysql.username}
+        password: ${mysql.password}
 redis:
   node: ${redis.host}
-
 zk:
   host: ${zookeeper.host}
