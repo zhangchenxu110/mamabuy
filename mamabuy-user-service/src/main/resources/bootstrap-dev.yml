@@ -11,9 +11,9 @@ sharding:
     datasource:
       names: ds
       ds:
-        url: ${mysql.url}
-        username: ${mysql.username}
-        password: ${mysql.password}
+        url: jdbc:mysql://123.207.23.185:3306/mamabuy-user?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+        username: root
+        password: 12345678
 redis:
   node: ${redis.host}
 zk:
